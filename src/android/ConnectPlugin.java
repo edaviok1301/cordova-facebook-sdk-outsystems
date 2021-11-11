@@ -233,7 +233,7 @@ public class ConnectPlugin extends CordovaPlugin {
     @Override
     public void onPause(boolean multitasking) {
         super.onPause(multitasking);
-        AppEventsLogger.deactivateApp(cordova.getActivity().getApplication());
+        //AppEventsLogger.deactivateApp(cordova.getActivity().getApplication());
     }
 
     @Override
@@ -920,7 +920,7 @@ public class ConnectPlugin extends CordovaPlugin {
     /**
      * Wraps the given object if necessary.
      *
-     * If the object is null or , returns {@link #JSONObject.NULL}.
+     * If the object is null or , returns .
      * If the object is a {@code JSONArray} or {@code JSONObject}, no wrapping is necessary.
      * If the object is {@code JSONObject.NULL}, no wrapping is necessary.
      * If the object is an array or {@code Collection}, returns an equivalent {@code JSONArray}.
